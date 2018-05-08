@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+>
+    <data>
+        <import type="com.woosiyuan.faceattendance.R" />
+        <variable
+            name="activity"
+            type="com.woosiyuan.faceattendance.arcface.main.ui.AttendanceActivity" />
+    </data>
+
+<LinearLayout
+    android:background="@mipmap/bg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/title_bar"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:text="姓名"
+            android:textSize="@dimen/item_text"
+            android:textColor="@color/text_bg"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="工号"
+            android:textSize="@dimen/item_text"
+            android:textColor="@color/text_bg"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="打卡时间"
+            android:textSize="@dimen/item_text"
+            android:textColor="@color/text_bg"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/attendance_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
+</layout>
+
+ <!--   android:onClick="@{()->activity.onback}"-->

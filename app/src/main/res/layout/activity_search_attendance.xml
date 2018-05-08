@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    tools:context="com.woosiyuan.faceattendance.arcface.main.ui.SearchAttendanceActivity">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/common_search_title"/>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="姓名"
+            android:textSize="@dimen/item_text"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="工号"
+            android:textSize="@dimen/item_text"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:text="打卡时间"
+            android:textSize="@dimen/item_text"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_width="0dp" android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/attendance_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
+</layout>

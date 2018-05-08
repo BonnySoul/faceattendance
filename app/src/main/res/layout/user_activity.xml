@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="user" type="com.woosiyuan.faceattendance.basis.entity.User"/>
+        <variable name="setting"
+            type="com.woosiyuan.faceattendance.setting.ui.UserSettingActivity" />
+    </data>
+
+
+    <LinearLayout
+        android:background="@mipmap/bg"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/appbar"
+            layout="@layout/title_bar"/>
+        
+        <ImageView
+            android:id="@+id/picture"
+            android:layout_marginTop="60dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/wsy_logo"
+            android:layout_width="200dp" android:layout_height="200dp"/>
+        
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            style="@style/Setting.Layout" >
+
+            <TextView
+                android:textSize="@dimen/dialog_text"
+                android:text="用户名称："
+                style="@style/Setting.BaseTextview"/>
+
+            <TextView
+                android:id="@+id/user_name"
+                android:textSize="@dimen/dialog_text"
+                style="@style/Setting.ContentTextview"
+                android:drawableRight="@mipmap/ic_jiantou"
+                android:text="@{user.name}"
+
+            />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/Setting.Layout" >
+
+            <TextView
+                android:textSize="@dimen/dialog_text"
+                android:text="用户地址："
+                style="@style/Setting.BaseTextview"/>
+
+            <TextView
+                android:textSize="@dimen/dialog_text"
+                android:id="@+id/user_tel"
+                style="@style/Setting.ContentTextview"
+                android:drawableRight="@mipmap/ic_jiantou"
+                android:text="@{user.tel}"
+            />
+        </LinearLayout>
+        
+
+
+    </LinearLayout>
+</layout>

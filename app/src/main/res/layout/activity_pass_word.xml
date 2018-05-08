@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout android:background="@mipmap/bg" android:orientation="vertical"
+        android:layout_width="match_parent" android:layout_height="match_parent">
+        <include
+            android:id="@+id/title_bar"
+            layout="@layout/title_bar"/>
+
+        <LinearLayout android:id="@+id/linear1" android:padding="15dp"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView android:text="    原密码:" style="@style/Password.text"/>
+
+            <EditText android:id="@+id/et_old_pass" style="@style/Password.edit"/>
+        </LinearLayout>
+
+        <LinearLayout android:padding="15dp" android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:text="    新密码:" style="@style/Password.text"/>
+            <EditText android:id="@+id/et_new_pass" style="@style/Password.edit"/>
+        </LinearLayout>
+
+        <LinearLayout android:padding="15dp" android:orientation="horizontal"
+            android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView style="@style/Password.text" android:text="确认密码:"/>
+            <EditText android:id="@+id/et_two_pass" style="@style/Password.edit"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

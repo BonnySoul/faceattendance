@@ -1,0 +1,126 @@
+<resources>
+
+    <style name="LoadingDialog"
+        parent="@android:style/Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <style name="GridView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:horizontalSpacing">@dimen/margin_large</item>
+        <item name="android:verticalSpacing">@dimen/margin_large</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+    <style name="ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+    </style>
+    <style name="ListView.Common">
+        <item name="android:divider">@color/divider_dark</item>
+        <item name="android:dividerHeight">@dimen/divider_height</item>
+    </style>
+    <style name="ListView.Light">
+        <item name="android:divider">@color/divider</item>
+        <item name="android:dividerHeight">@dimen/divider_height</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height</item>
+    </style>
+    <style name="Divider.Common">
+        <item name="android:background">@color/divider_dark</item>
+    </style>
+    <style name="Divider.Light">
+        <item name="android:background">@color/divider</item>
+    </style>
+    <style name="Divider.Vertical">
+        <item name="android:layout_width">@dimen/divider_height</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/divider_dark</item>
+    </style>
+
+    <style name="Dialog"/>
+    <style name="Dialog.Theme" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">false</item>
+    </style>
+    <style name="Dialog.Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/margin_normal</item>
+        <item name="android:paddingRight">@dimen/margin_normal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/font_larger</item>
+        <item name="android:textColor">@color/divider_dark</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Dialog.Content">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Dialog.Button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">@dimen/font_larger</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/common_item_bg</item>
+    </style>
+
+    <style name="task_list">
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:divider">@color/divider_dark</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="task_btn">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:divider">@color/divider_dark</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">40dp</item>
+    </style>
+
+    <style name="tv_task_tem_point">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="TaskDialogValueEdit">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:background">@drawable/edit_bg</item>
+        <item name="android:paddingLeft">@dimen/margin_larger</item>
+    </style>
+
+
+</resources>

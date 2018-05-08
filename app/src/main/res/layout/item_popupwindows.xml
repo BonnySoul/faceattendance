@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#44000000">
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/item_popupwindows_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popupwindows_btn"
+            android:padding="15dip"
+            android:text="拍照"
+            android:textColor="#585858"
+            android:textSize="15sp" />
+
+        <View style="@style/line" />
+
+        <Button
+            android:id="@+id/item_popupwindows_Photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popupwindows_btn"
+            android:padding="15dip"
+            android:text="从相册选择"
+            android:textColor="#585858"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/line"
+            android:layout_height="5dip" />
+
+        <Button
+            android:id="@+id/item_popupwindows_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popupwindows_btn"
+            android:padding="15dip"
+            android:text="取消"
+            android:textColor="#585858"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>

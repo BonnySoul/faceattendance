@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.woosiyuan.faceattendance.R" />
+
+        <variable
+            name="user"
+            type="com.woosiyuan.faceattendance.basis.entity.User" />
+
+        <variable
+            name="tags"
+            type="String" />
+
+        <variable
+            name="adapter"
+            type="com.woosiyuan.faceattendance.arcface.adapter.AttendanceAdapter" />
+
+        <variable
+            name="position"
+            type="int" />
+    </data>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent" android:layout_height="50dp">
+
+        <TextView
+            android:text="@{user.name}"
+            android:textSize="@dimen/item_text"
+            android:textColor="@color/text_bg"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/name"/>
+
+        <TextView
+            android:text="@{tags}"
+            android:textSize="@dimen/item_text"
+            android:textColor="@color/text_bg"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="1" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/tags"/>
+
+
+        <TextView
+            android:text="@{user.clockTime}"
+            android:textColor="@{adapter.normalWorkTime(user.clockTime)? 0xff3399ff:0xffFF4081}"
+            android:layout_weight="1"
+            android:textSize="@dimen/dialog_text"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/time"/>
+
+    </LinearLayout>
+
+  <!--  android:visibility="@{adapter.isShowDelete ? View.VISIBLE : View.GONE}"-->
+
+</layout>

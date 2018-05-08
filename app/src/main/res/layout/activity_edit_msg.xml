@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/title_bar"/>
+
+
+    <EditText
+        android:id="@+id/et_name"
+        android:background="@drawable/edit_bg"
+        android:textColor="@color/text_bg"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+
+    <TextView
+            android:text="仅支持中文，英文大小写，数字，-，及其组合"
+             android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+    />
+
+</LinearLayout>
+</layout>

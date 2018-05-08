@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <import type="com.woosiyuan.faceattendance.R" />
+
+        <variable
+            name="bean"
+            type="com.woosiyuan.faceattendance.basis.entity.FaceMessage" />
+
+        <variable
+            name="adapter"
+            type="com.woosiyuan.faceattendance.arcface.adapter.PeopleAdapter" />
+
+        <variable
+            name="position"
+            type="int" />
+    </data>
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_margin="10dp"
+        android:layout_width="match_parent" android:layout_height="50dp">
+
+        <TextView
+            android:text="@{bean.MName}"
+            android:textSize="@dimen/item_text"
+            android:textColor="@color/text_bg"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal" android:layout_marginRight="10dp"
+            android:layout_weight="3" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/name"/>
+
+        <TextView
+            android:text="@{bean.tags}"
+            android:textSize="@dimen/item_text"
+            android:textColor="@color/text_bg"
+            android:layout_weight="3"
+            android:layout_marginRight="10dp" android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal" android:layout_width="0dp"
+            android:layout_height="wrap_content" android:id="@+id/tags"/>
+
+        <ImageView
+            android:onClick="@{()->adapter.deleteOnclick(bean,position)}"
+            android:src="@mipmap/remove"
+            android:layout_gravity="center_vertical"
+            android:layout_width="20dp"
+            android:layout_marginLeft="10dp" android:layout_height="20dp"
+            android:id="@+id/delete"/>
+    </LinearLayout>
+
+  <!--
+  android:onClick="@{()->adapter.deleteOnclick(bean,position)}""
+  android:visibility="@{adapter.isShowDelete ? View.VISIBLE : View.GONE}"-->
+
+</layout>

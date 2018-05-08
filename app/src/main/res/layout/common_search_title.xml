@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/common_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/common_back"
+            android:drawablePadding="5dip"
+            android:gravity="center"
+            android:paddingBottom="13dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="13dip"
+            android:textColor="#000000"
+            android:textSize="@dimen/item_text" />
+
+
+        <TextView
+            android:id="@+id/common_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="13dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="13dip"
+            android:text="日期"
+            android:textColor="#000000"
+            android:textSize="@dimen/item_text"
+        />
+
+       <EditText
+           android:id="@+id/et_search"
+           android:hint="搜索关键字"
+           android:layout_toLeftOf="@+id/common_set"
+           android:layout_toRightOf="@+id/common_back"
+           android:layout_marginRight="20dp"
+           android:layout_marginLeft="20dp"
+           android:textSize="@dimen/item_text"
+           android:singleLine="true"
+           android:background="@drawable/bg_search"
+           android:drawablePadding="10dp"
+           android:paddingTop="5dp"
+           android:paddingBottom="5dp"
+           android:paddingLeft="5dp"
+           android:paddingRight="5dp"
+           android:drawableLeft="@mipmap/search"
+           android:layout_centerInParent="true"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <View style="@style/line" />
+</LinearLayout>
+</layout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout  xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent">
+
+    <com.guo.android_extend.widget.ExtImageView
+        android:id="@+id/extimageview"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:hint=" 输入名字 "/>
+
+
+    <EditText
+        android:id="@+id/tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:hint="工号(数字)"/>
+
+    <View style="@style/Divider.Common"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_ok"
+            style="@style/TextChoose"
+            android:text="确定"
+        />
+        <View android:layout_width="1px" android:layout_height="match_parent"
+            android:background="#B6B6B6"
+        />
+
+        <TextView
+            android:id="@+id/tv_cancle"
+            style="@style/TextChoose"
+            android:text="取消"
+        />
+    </LinearLayout>
+
+</LinearLayout>
+</layout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">梧斯源人脸考勤</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="attendance_result">考勤记录</string>
+    <string name="manager_face">人脸库管理</string>
+    <string name="main_setting">人脸管理</string>
+    <string name="main_time">时间阈值设定</string>
+    <string name="user_name">浙江梧斯源</string>
+    <string name="user_addr">www.woosiyuan.com</string>
+    <string name="user_addr_hint">请输入新的地址</string>
+    <string name="user_name_hint">请输入新的名称</string>
+    <string name="iflytek.app.id">=56751b1f</string>
+
+</resources>
